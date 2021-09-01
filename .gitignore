@@ -1,2 +1,3 @@
 node_modules/
-src/strategy/logger/file
+src/strategy/logger/file/*
+!src/strategy/logger/file/.gitkeep
