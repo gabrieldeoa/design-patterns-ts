@@ -7,7 +7,7 @@ export default class Logger {
     this.logOutput = logOutput;
   }
 
-  private doPrint(message: string) {
+  private doPrint(message: string): void {
     if (!this.logOutput) {
       throw new Error("No output has been set");
     }
