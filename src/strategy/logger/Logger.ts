@@ -7,27 +7,23 @@ export default class Logger {
     this.logOutput = logOutput;
   }
 
-  debug(message: string): void {
+  private doPrint(message: string) {
     if (!this.logOutput) {
       throw new Error("No output has been set");
     }
+  
+    this.logOutput.print(message);
+  }
 
-    this.logOutput.print(`[DEBUG]: ${message}`);
+  debug(message: string): void {
+    this.doPrint(`[DEBUG]: ${message}`)
   }
 
   error(message: string): void {
-    if (!this.logOutput) {
-      throw new Error("No output has been set");
-    }
-
-    this.logOutput.print(`[ERROR]: ${message}`);
+    this.doPrint(`[ERROR]: ${message}`)
   }
 
   info(message: string): void {
-    if (!this.logOutput) {
-      throw new Error("No output has been set");
-    }
-
-    this.logOutput.print(`[INFO]: ${message}`);
+    this.doPrint(`[INFO]: ${message}`)
   }
 }
