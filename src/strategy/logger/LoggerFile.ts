@@ -3,7 +3,7 @@ import { existsSync, writeFileSync, appendFileSync } from "fs";
 
 import LoggerOutputInterface from "./LoggerOutputInterface";
 
-export default class LogFile implements LoggerOutputInterface {
+export default class LoggerFile implements LoggerOutputInterface {
 
 
   constructor(private filename: string, private filepath: string) { }
