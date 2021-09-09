@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "strategy": "ts-node ./src/strategy/logger/"
+    "strategy": "ts-node ./src/strategy/logger/",
+    "builder": "ts-node ./src/builder/person/"
   },
   "author": "Gabriel Araujo",
   "license": "ISC",
