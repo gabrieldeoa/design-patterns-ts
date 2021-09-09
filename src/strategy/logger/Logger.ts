@@ -1,9 +1,9 @@
-import LoggerOutputInterface from "./LoggerOutputInterface";
+import ILoggerOutput from "./ILoggerOutput";
 
 export default class Logger {
-  private logOutput: LoggerOutputInterface | null = null;
+  private logOutput: ILoggerOutput | null = null;
 
-  setLogOutput(logOutput: LoggerOutputInterface): void {
+  setLogOutput(logOutput: ILoggerOutput): void {
     this.logOutput = logOutput;
   }
 

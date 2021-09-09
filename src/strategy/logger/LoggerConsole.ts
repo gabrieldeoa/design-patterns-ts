@@ -1,6 +1,6 @@
-import LoggerOutputInterface from "./LoggerOutputInterface";
+import ILoggerOutput from "./ILoggerOutput";
 
-export default class LoggerConsole implements LoggerOutputInterface {
+export default class LoggerConsole implements ILoggerOutput {
   print(message: string): void {
     console.log(`${message}`);
   }

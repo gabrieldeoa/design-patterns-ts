@@ -1,9 +1,9 @@
 import path from "path";
 import { existsSync, writeFileSync, appendFileSync } from "fs";
 
-import LoggerOutputInterface from "./LoggerOutputInterface";
+import ILoggerOutput from "./ILoggerOutput";
 
-export default class LoggerFile implements LoggerOutputInterface {
+export default class LoggerFile implements ILoggerOutput {
 
 
   constructor(private filename: string, private filepath: string) { }
