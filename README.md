@@ -12,6 +12,7 @@ Studying Design Patterns in TypeScript
 List of patterns:
 
 - strategy
+- builder
 
 <br>
 Example:
