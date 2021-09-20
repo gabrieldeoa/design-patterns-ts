@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "strategy": "ts-node ./src/strategy/logger/",
-    "builder": "ts-node ./src/builder/person/"
+    "builder": "ts-node ./src/builder/person/",
+    "decorator": "ts-node ./src/decorator/hamburguer/"
   },
   "author": "Gabriel Araujo",
   "license": "ISC",
