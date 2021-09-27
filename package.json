@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "strategy": "ts-node ./src/strategy/logger/",
     "builder": "ts-node ./src/builder/person/",
-    "decorator": "ts-node ./src/decorator/hamburguer/"
+    "decorator": "ts-node ./src/decorator/hamburguer/",
+    "facade": "ts-node ./src/facade/smart-house/"
   },
   "author": "Gabriel Araujo",
   "license": "ISC",
