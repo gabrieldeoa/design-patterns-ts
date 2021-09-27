@@ -1,5 +1,5 @@
 import Facade from "./Facade";
 
-Facade.startCinemaMode("Matrix");
+const house = Facade.startCinemaMode("Matrix");
 
-Facade.finishCinemaMode();
+Facade.finishCinemaMode(house);

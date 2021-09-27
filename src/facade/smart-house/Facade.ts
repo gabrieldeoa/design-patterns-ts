@@ -5,9 +5,7 @@ import House from "./House";
 import Room from "./Room";
 
 export default class Facade {
-    static house: House;
-
-    static startCinemaMode(movie:string) {
+    static startCinemaMode(movie:string) :House {
         const lamp = new Lamp("Movie Lamp");
         lamp.turnOn();
         lamp.changeColor("Azul");
@@ -24,12 +22,13 @@ export default class Facade {
         const room = new Room("Movie Room", "Smart Movie Room", [lamp, tv, soundSystem]);
 
         const house = new House("teste", [room]);
-        Facade.house = house;
+
+        return house;
         
     }
     
-    static finishCinemaMode() {
-        const room = this.house.getRoom();
+    static finishCinemaMode(house: House) {
+        const room = house.getRoom();
         const devices = room[0].getDevices();
 
         for(let device of devices) {
