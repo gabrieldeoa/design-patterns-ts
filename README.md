@@ -13,6 +13,8 @@ List of patterns:
 
 - strategy
 - builder
+- decorator
+- facade
 
 <br>
 Example:
