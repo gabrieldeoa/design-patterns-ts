@@ -8,7 +8,8 @@
     "strategy": "ts-node ./src/strategy/logger/",
     "builder": "ts-node ./src/builder/person/",
     "decorator": "ts-node ./src/decorator/hamburguer/",
-    "facade": "ts-node ./src/facade/smart-house/"
+    "facade": "ts-node ./src/facade/smart-house/",
+    "adapter": "ts-node ./src/adapter/persist-data/"
   },
   "author": "Gabriel Araujo",
   "license": "ISC",
