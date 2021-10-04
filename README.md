@@ -15,6 +15,7 @@ List of patterns:
 - builder
 - decorator
 - facade
+- adapter
 
 <br>
 Example:
